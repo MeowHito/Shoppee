@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>ของที่ระลึก 30 ปี - สั่งซื้อ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <div class="max-w-6xl mx-auto px-4 py-10 space-y-12">
+
+    <!-- Header -->
+    <header class="text-center">
+      <h1 class="text-4xl font-bold mb-2">ของที่ระลึก 30 ปี วิทยาการคอมพิวเตอร์</h1>
+      <p class="text-gray-500">เลือกสินค้าที่คุณชอบ แล้วกด “เพิ่มลงตะกร้า”</p>
+    </header>
+
+    <!-- 🛍 สินค้า Grid -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- สินค้า Template -->
+      <!-- ซ้ำได้ตามต้องการ -->
+      <div class="bg-white rounded-xl shadow hover:shadow-xl transition p-4 text-center flex flex-col">
+        <img src="https://via.placeholder.com/300x200?text=เสื้อ" alt="เสื้อ" class="rounded-md mb-4 mx-auto">
+        <h2 class="text-lg font-semibold">เสื้อที่ระลึก</h2>
+        <p class="text-sm text-gray-500">สีขาว / ดำ Size S-XL</p>
+        <p class="text-blue-600 font-bold my-1">250 บาท</p>
+        <button onclick="addToCart('เสื้อที่ระลึก - 250 บาท')" 
+        class="mt-auto bg-black text-white py-1 px-4 rounded hover:bg-gray-800">เพิ่มลงตะกร้า</button><br>
+        <select id="color-shirt" class="mb-2 p-1 border rounded text-sm bg-black text-white text-center font-bold">
+          <option value="สีขาว">สีขาว</option>
+          <option value="สีดำ">สีดำ</option>
+          <option value="สีกรม">สีกรม</option>
+        </select>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-xl transition p-4 text-center flex flex-col">
+        <img src="https://via.placeholder.com/300x200?text=กระเป๋า" alt="กระเป๋า" class="rounded-md mb-4 mx-auto">
+        <h2 class="text-lg font-semibold">กระเป๋าผ้า</h2>
+        <p class="text-sm text-gray-500">สีกรมท่า</p>
+        <p class="text-blue-600 font-bold my-1">150 บาท</p>
+        <button onclick="addToCart('กระเป๋าผ้า - 150 บาท')" 
+        class="mt-auto bg-black text-white py-1 px-4 rounded hover:bg-gray-800">เพิ่มลงตะกร้า</button>
+        
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-xl transition p-4 text-center flex flex-col">
+        <img src="https://via.placeholder.com/300x200?text=หมวก" alt="หมวก" class="rounded-md mb-4 mx-auto">
+        <h2 class="text-lg font-semibold">หมวกแก๊ป</h2>
+        <p class="text-sm text-gray-500">ปักโลโก้ CS</p>
+        <p class="text-blue-600 font-bold my-1">180 บาท</p>
+        <button onclick="addToCart('หมวกแก๊ป - 180 บาท')" class="mt-auto bg-black text-white py-1 px-4 rounded hover:bg-gray-800">เพิ่มลงตะกร้า</button>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-xl transition p-4 text-center flex flex-col">
+        <img src="https://via.placeholder.com/300x200?text=หมวก" alt="หมวก" class="rounded-md mb-4 mx-auto">
+        <h2 class="text-lg font-semibold">แก้วน้ำ</h2>
+        <p class="text-sm text-gray-500">ปักโลโก้ CS</p>
+        <p class="text-blue-600 font-bold my-1">180 บาท</p>
+        <button onclick="addToCart('หมวกแก๊ป - 180 บาท')" class="mt-auto bg-black text-white py-1 px-4 rounded hover:bg-gray-800">เพิ่มลงตะกร้า</button>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-xl transition p-4 text-center flex flex-col">
+        <img src="https://via.placeholder.com/300x200?text=หมวก" alt="หมวก" class="rounded-md mb-4 mx-auto">
+        <h2 class="text-lg font-semibold">เข็มกลัด</h2>
+        <p class="text-sm text-gray-500">ปักโลโก้ CS</p>
+        <p class="text-blue-600 font-bold my-1">180 บาท</p>
+        <button onclick="addToCart('หมวกแก๊ป - 180 บาท')" class="mt-auto bg-black text-white py-1 px-4 rounded hover:bg-gray-800">เพิ่มลงตะกร้า</button>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-xl transition p-4 text-center flex flex-col">
+        <img src="https://via.placeholder.com/300x200?text=หมวก" alt="หมวก" class="rounded-md mb-4 mx-auto">
+        <h2 class="text-lg font-semibold">ร่ม</h2>
+        <p class="text-sm text-gray-500">ปักโลโก้ CS</p>
+        <p class="text-blue-600 font-bold my-1">180 บาท</p>
+        <button onclick="addToCart('หมวกแก๊ป - 180 บาท')" class="mt-auto bg-black text-white py-1 px-4 rounded hover:bg-gray-800">เพิ่มลงตะกร้า</button>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-xl transition p-4 text-center flex flex-col">
+        <img src="https://via.placeholder.com/300x200?text=หมวก" alt="หมวก" class="rounded-md mb-4 mx-auto">
+        <h2 class="text-lg font-semibold">สมุดโน๊ต</h2>
+        <p class="text-sm text-gray-500">ปักโลโก้ CS</p>
+        <p class="text-blue-600 font-bold my-1">180 บาท</p>
+        <button onclick="addToCart('หมวกแก๊ป - 180 บาท')" class="mt-auto bg-black text-white py-1 px-4 rounded hover:bg-gray-800">เพิ่มลงตะกร้า</button>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-xl transition p-4 text-center flex flex-col">
+        <img src="https://via.placeholder.com/300x200?text=หมวก" alt="หมวก" class="rounded-md mb-4 mx-auto">
+        <h2 class="text-lg font-semibold">ปากกา</h2>
+        <p class="text-sm text-gray-500">ปักโลโก้ CS</p>
+        <p class="text-blue-600 font-bold my-1">180 บาท</p>
+        <button onclick="addToCart('หมวกแก๊ป - 180 บาท')" class="mt-auto bg-black text-white py-1 px-4 rounded hover:bg-gray-800">เพิ่มลงตะกร้า</button>
+      </div>
+
+      <!-- เพิ่มสินค้าอื่น ๆ แบบเดียวกันได้เลย -->
+    </section>
+
+    <!-- 🛒 ตะกร้าสินค้า -->
+    <section class="bg-white p-6 rounded-xl shadow">
+      <h2 class="text-xl font-semibold mb-4">🛒 สินค้าที่คุณเลือก</h2>
+      <textarea id="cartItems" name="cartItems" readonly class="w-full border border-gray-300 rounded p-3 text-sm h-32"></textarea>
+    </section>
+
+    <!-- 📄 ฟอร์มสั่งซื้อ -->
+    <section class="bg-white p-8 rounded-xl shadow">
+      <h2 class="text-2xl font-semibold mb-6 text-center text-gray-800">ฟอร์มสั่งซื้อสินค้า</h2>
+      <form class="space-y-4" onsubmit="return validateCart()">
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700">ชื่อ-นามสกุล</label>
+            <input type="text" name="fullname" required class="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">เบอร์โทรศัพท์</label>
+            <input type="tel" name="phone" required class="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700">ที่อยู่จัดส่ง</label>
+          <textarea name="address" rows="3" required class="mt-1 block w-full border border-gray-300 rounded-md p-2"></textarea>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700">วันที่สั่งซื้อ</label>
+            <input type="date" name="date" required class="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">ช่องทางชำระเงิน</label>
+            <select name="payment" required class="mt-1 block w-full border border-gray-300 rounded-md p-2">
+              <option value="">-- เลือก --</option>
+              <option>โอนบัญชีธนาคาร</option>
+              <option>PromptPay</option>
+              <option>อื่นๆ</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700">แนบสลิปโอนเงิน</label>
+          <input type="file" name="slip" accept="image/*" required class="mt-1 block w-full" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700">การรับสินค้า</label>
+          <select name="delivery" required class="mt-1 block w-full border border-gray-300 rounded-md p-2">
+            <option>รับเองที่มหาวิทยาลัย</option>
+            <option>จัดส่งทางไปรษณีย์</option>
+          </select>
+        </div>
+
+        <div class="pt-4">
+          <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700">✅ ยืนยันการสั่งซื้อ</button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <!-- 🔧 JS: Add to Cart -->
+  <script>
+    function addToCart(item) {
+      const cart = document.getElementById('cartItems');
+      cart.value += `- ${item}\n`;
+    }
+
+    function validateCart() {
+      const cart = document.getElementById('cartItems').value.trim();
+      if (cart === "") {
+        alert("กรุณาเลือกสินค้าก่อนทำการสั่งซื้อ");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>

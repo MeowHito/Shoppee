@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin - จัดการสินค้า</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen py-10 px-4">
+  <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-md">
+    <h1 class="text-2xl font-semibold mb-6 text-center text-gray-800">จัดการสินค้า ของที่ระลึก 30 ปี วิทยาการคอมพิวเตอร์</h1>
+    <form class="space-y-4">
+      <div>
+        <label class="block text-sm font-medium text-gray-700">หมวดหมู่สินค้า</label>
+        <select class="mt-1 block w-full border border-gray-300 rounded-md p-2">
+          <option>เสื้อ</option>
+          <option>กระเป๋า</option>
+          <option>แก้ว</option>
+          <option>หมวก</option>
+          <option>ร่ม</option>
+          <option>เข็มกลัด</option>
+          <option>สมุด</option>
+          <option>ปากกา</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">สี / ขนาด (ถ้ามี)</label>
+        <input type="text" placeholder="เช่น สีขาว, Size M" class="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">ราคา (บาท)</label>
+        <input type="number" class="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">อัปโหลดรูปสินค้า</label>
+        <input type="file" class="mt-1 block w-full" />
+      </div>
+
+      <div class="pt-4">
+        <button type="submit" class="w-full bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800">บันทึกสินค้า</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
